@@ -2,6 +2,8 @@
 
 A modern, full-stack Retrieval-Augmented Generation (RAG) system for questioning legal documents and PDFs.
 
+<img width="1376" height="768" alt="rag cover image 5" src="https://github.com/user-attachments/assets/2dfaa757-56cf-42ca-8fe4-d2ff7e3aec7b" />
+
 ## Features
 
 - **Zero-Cost Local Embeddings**: Uses `sentence-transformers` locally to embed documents without API costs.
@@ -52,6 +54,7 @@ The frontend will run on `http://localhost:5173`.
 
 ## Architecture Flow
 
+<img width="1376" height="768" alt="rag cover image 4" src="https://github.com/user-attachments/assets/3a8ff3d3-d606-4a69-b756-3d2f1d6dd04a" />
 1. **Ingestion**: PDFs are uploaded via the React UI to FastAPI.
 2. **Processing**: `pdfplumber` extracts text, which is chunked into paragraphs.
 3. **Embedding**: A local `SentenceTransformer` converts chunks to vectors and stores them in ChromaDB.
