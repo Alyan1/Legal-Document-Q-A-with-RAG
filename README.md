@@ -40,10 +40,14 @@ pip install fastapi uvicorn chromadb sentence-transformers google-genai python-d
 uvicorn backend.main:app --reload
 ```
 The backend will run on `http://127.0.0.1:8000`.
-<img width="1920" height="1080" alt="4 QA" src="https://github.com/user-attachments/assets/37711dee-6fcf-40fa-844d-077cfef08dc1" />
-<img width="1920" height="928" alt="3 QA" src="https://github.com/user-attachments/assets/70bebd23-fa1b-4776-8bf6-3f76df95db04" />
-<img width="1920" height="939" alt="2 QA" src="https://github.com/user-attachments/assets/50f52604-9ceb-45c7-9dcd-3f41b18af248" />
+
 <img width="1920" height="934" alt="1 QA" src="https://github.com/user-attachments/assets/8d44a86b-f0a6-40b8-b4b7-7bf523656d44" />
+<img width="1920" height="939" alt="2 QA" src="https://github.com/user-attachments/assets/50f52604-9ceb-45c7-9dcd-3f41b18af248" />
+<img width="1920" height="928" alt="3 QA" src="https://github.com/user-attachments/assets/70bebd23-fa1b-4776-8bf6-3f76df95db04" />
+<img width="1920" height="1080" alt="4 QA" src="https://github.com/user-attachments/assets/37711dee-6fcf-40fa-844d-077cfef08dc1" />
+
+
+
 
 ### 2. Frontend Setup
 Open a new terminal and navigate to the `client` directory:
