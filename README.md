@@ -1,3 +1,5 @@
+
+
 # Legal Document Q&A (RAG System)
 
 A modern, full-stack Retrieval-Augmented Generation (RAG) system for questioning legal documents and PDFs.
@@ -38,6 +40,10 @@ pip install fastapi uvicorn chromadb sentence-transformers google-genai python-d
 uvicorn backend.main:app --reload
 ```
 The backend will run on `http://127.0.0.1:8000`.
+<img width="1920" height="1080" alt="4 QA" src="https://github.com/user-attachments/assets/37711dee-6fcf-40fa-844d-077cfef08dc1" />
+<img width="1920" height="928" alt="3 QA" src="https://github.com/user-attachments/assets/70bebd23-fa1b-4776-8bf6-3f76df95db04" />
+<img width="1920" height="939" alt="2 QA" src="https://github.com/user-attachments/assets/50f52604-9ceb-45c7-9dcd-3f41b18af248" />
+<img width="1920" height="934" alt="1 QA" src="https://github.com/user-attachments/assets/8d44a86b-f0a6-40b8-b4b7-7bf523656d44" />
 
 ### 2. Frontend Setup
 Open a new terminal and navigate to the `client` directory:
@@ -54,7 +60,6 @@ The frontend will run on `http://localhost:5173`.
 
 ## Architecture Flow
 
-<img width="1376" height="768" alt="rag cover image 4" src="https://github.com/user-attachments/assets/3a8ff3d3-d606-4a69-b756-3d2f1d6dd04a" />
 1. **Ingestion**: PDFs are uploaded via the React UI to FastAPI.
 2. **Processing**: `pdfplumber` extracts text, which is chunked into paragraphs.
 3. **Embedding**: A local `SentenceTransformer` converts chunks to vectors and stores them in ChromaDB.
